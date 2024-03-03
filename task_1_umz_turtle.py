@@ -1,0 +1,15 @@
+import turtle
+wn = turtle.Screen()
+screencolor = input("enter your screen color :")
+wn.bgcolor(screencolor)
+wn.title("amiram")
+amiram = turtle.Turtle()
+amiram.shape("turtle")
+rang=input("pls enter your square color:")
+amiram.color(rang)
+size = int(input("enter your square size:"))
+for i in range(4):
+    amiram.stamp()
+    amiram.forward(size)
+    amiram.left(90)
+wn.mainloop()
